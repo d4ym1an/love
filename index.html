@@ -10,9 +10,13 @@
 </head>
 
 <body>
-    <header>
+    <div class="background">
+        <div class="pattern-bg"></div>
+        <div class="bg-radial"></div>
+    </div>
+    <header style="background: linear-gradient(90deg, #2f3957, #37477c); color: #ffffff;">
         <h1>You Are Not Alone</h1>
-        <p>There is hope. There is help.</p>
+        <h2>There is hope. There is help.</h2>
     </header>
     <main>
         <p class="textOne">If you are feeling overwhelmed, please know that support is available. You are valued, and
@@ -21,8 +25,9 @@
         <div class="overall">
             <div class="halfOne">
                 <ul>
-                    <li>Call the Suicide Prevention Hotline: <a href="tel:988" style="text-decoration: underline;">988</a></li>
-                    <li>Text "HELLO" to 741741</li>
+                    <li>Call the Suicide Prevention Hotline: <a href="tel:988" style="text-decoration: underline;"><span
+                                class="highlight">988</span></a></li>
+                    <li>Text "HELLO" to <a href="tel:741741"><span class="highlight">741741</span></a></li>
                     <li>Reach out to a trusted friend or family member</li>
                 </ul>
             </div>
@@ -32,72 +37,69 @@
 
                 <label for="hotlines">Select your country for a suicide prevention hotline:</label>
                 <select id="hotlines" name="hotlines" size="10">
-                    <option value="china">China: 0800-810-1117</option>
-                    <option value="india">India: 022-27546669</option>
-                    <option value="usa">USA: 1-800-273-8255</option>
-                    <option value="indonesia">Indonesia: +62 21 500 454</option>
-                    <option value="pakistan">Pakistan: 042-35761999</option>
-                    <option value="brazil">Brazil: 188</option>
-                    <option value="nigeria">Nigeria: +234 806 210 6493</option>
-                    <option value="bangladesh">Bangladesh: 199</option>
-                    <option value="russia">Russia: 8-800-2000-122</option>
-                    <option value="mexico">Mexico: 800 822 3737</option>
-                    <option value="uk">United Kingdom: 116 123 (Samaritans)</option>
-                    <option value="canada">Canada: 1-833-456-4566</option>
-                    <option value="australia">Australia: 13 11 14 (Lifeline)</option>
-                    <option value="japan">Japan: 0570-783-556</option>
-                    <option value="germany">Germany: 0800 111 0 111</option>
-                    <option value="france">France: 3114</option>
-                    <option value="italy">Italy: 800 86 00 22</option>
-                    <option value="southafrica">South Africa: 0800 567 567</option>
-                    <option value="philippines">Philippines: 0966-351-4518</option>
-                    <option value="southkorea">South Korea: 1393</option>
-                    <option value="argentina">Argentina: 135</option>
-                    <option value="spain">Spain: 024</option>
-                    <option value="newzealand">New Zealand: 0800 543 354</option>
-                    <option value="sweden">Sweden: 90101</option>
-                    <option value="norway">Norway: 116 123</option>
-                    <option value="denmark">Denmark: 70 201 201</option>
-                    <option value="finland">Finland: 09 2525 0111</option>
-                    <option value="netherlands">Netherlands: 113</option>
-                    <option value="belgium">Belgium: 1813</option>
-                    <option value="switzerland">Switzerland: 143</option>
-                    <option value="austria">Austria: 142</option>
-                    <option value="portugal">Portugal: 800 202 669</option>
-                    <option value="ireland">Ireland: 116 123</option>
-                    <option value="poland">Poland: 116 123</option>
-                    <option value="czechrepublic">Czech Republic: 116 123</option>
-                    <option value="hungary">Hungary: 116 123</option>
-                    <option value="romania">Romania: 0800 801 200</option>
-                    <option value="greece">Greece: 1018</option>
-                    <option value="turkey">Turkey: 182</option>
-                    <option value="malaysia">Malaysia: 03-76272929</option>
-                    <option value="singapore">Singapore: 1800 221 4444</option>
-                    <option value="thailand">Thailand: 1323</option>
-                    <option value="vietnam">Vietnam: 1900 9237</option>
-                    <option value="saudiarabia">Saudi Arabia: 920033360</option>
-                    <option value="uae">UAE: 800 4673</option>
-                    <option value="egypt">Egypt: 0800 888 0700</option>
-                    <option value="kenya">Kenya: 0800 720 029</option>
-                    <option value="ghana">Ghana: 2332 444 71279</option>
+                    <option value="china">China: <span class="highlight">0800-810-1117</span></option>
+                    <option value="india">India: <span class="highlight">022-27546669</span></option>
+                    <option value="usa">USA: <span class="highlight">1-800-273-8255</span></option>
+                    <option value="indonesia">Indonesia: <span class="highlight">+62 21 500 454</span></option>
+                    <option value="pakistan">Pakistan: <span class="highlight">042-35761999</span></option>
+                    <option value="brazil">Brazil: <span class="highlight">188</span></option>
+                    <option value="nigeria">Nigeria: <span class="highlight">+234 806 210 6493</span></option>
+                    <option value="bangladesh">Bangladesh: <span class="highlight">199</span></option>
+                    <option value="russia">Russia: <span class="highlight">8-800-2000-122</span></option>
+                    <option value="mexico">Mexico: <span class="highlight">800 822 3737</span></option>
+                    <option value="uk">United Kingdom: <span class="highlight">116 123</span> (Samaritans)</option>
+                    <option value="canada">Canada: <span class="highlight">1-833-456-4566</span></option>
+                    <option value="australia">Australia: <span class="highlight">13 11 14</span> (Lifeline)</option>
+                    <option value="japan">Japan: <span class="highlight">0570-783-556</span></option>
+                    <option value="germany">Germany: <span class="highlight">0800 111 0 111</span></option>
+                    <option value="france">France: <span class="highlight">3114</span></option>
+                    <option value="italy">Italy: <span class="highlight">800 86 00 22</span></option>
+                    <option value="southafrica">South Africa: <span class="highlight">0800 567 567</span></option>
+                    <option value="philippines">Philippines: <span class="highlight">0966-351-4518</span></option>
+                    <option value="southkorea">South Korea: <span class="highlight">1393</span></option>
+                    <option value="argentina">Argentina: <span class="highlight">135</span></option>
+                    <option value="spain">Spain: <span class="highlight">024</span></option>
+                    <option value="newzealand">New Zealand: <span class="highlight">0800 543 354</span></option>
+                    <option value="sweden">Sweden: <span class="highlight">90101</span></option>
+                    <option value="norway">Norway: <span class="highlight">116 123</span></option>
+                    <option value="denmark">Denmark: <span class="highlight">70 201 201</span></option>
+                    <option value="finland">Finland: <span class="highlight">09 2525 0111</span></option>
+                    <option value="netherlands">Netherlands: <span class="highlight">113</span></option>
+                    <option value="belgium">Belgium: <span class="highlight">1813</span></option>
+                    <option value="switzerland">Switzerland: <span class="highlight">143</span></option>
+                    <option value="austria">Austria: <span class="highlight">142</span></option>
+                    <option value="portugal">Portugal: <span class="highlight">800 202 669</span></option>
+                    <option value="ireland">Ireland: <span class="highlight">116 123</span></option>
+                    <option value="poland">Poland: <span class="highlight">116 123</span></option>
+                    <option value="czechrepublic">Czech Republic: <span class="highlight">116 123</span></option>
+                    <option value="hungary">Hungary: <span class="highlight">116 123</span></option>
+                    <option value="romania">Romania: <span class="highlight">0800 801 200</span></option>
+                    <option value="greece">Greece: <span class="highlight">1018</span></option>
+                    <option value="turkey">Turkey: <span class="highlight">182</span></option>
+                    <option value="malaysia">Malaysia: <span class="highlight">03-76272929</span></option>
+                    <option value="singapore">Singapore: <span class="highlight">1800 221 4444</span></option>
+                    <option value="thailand">Thailand: <span class="highlight">1323</span></option>
+                    <option value="vietnam">Vietnam: <span class="highlight">1900 9237</span></option>
+                    <option value="saudiarabia">Saudi Arabia: <span class="highlight">920033360</span></option>
+                    <option value="uae">UAE: <span class="highlight">800 4673</span></option>
+                    <option value="egypt">Egypt: <span class="highlight">0800 888 0700</span></option>
+                    <option value="kenya">Kenya: <span class="highlight">0800 720 029</span></option>
+                    <option value="ghana">Ghana: <span class="highlight">2332 444 71279</span></option>
                 </select>
             </div>
         </div>
-        <p><strong>If your country is not listed, please search online for your local suicide prevention hotline.</strong></p>
+        <p><strong>If your country is not listed, please search online for your local suicide prevention
+                hotline.</strong></p>
     </main>
-    <div class="myStory">
-        <h1>My Story</h1>
-        <p>At a young age, I lost my little sister when she was just only less than a year old. This really did
-            shape my perspective of reality and did hurt me, bring me down to depression. It hurt me so much I was
-            genuinely considering suicide, luckily I was stopped in time and I didn't. If you are considering
-            leaving the lobby early, DON'T. If I did that 7 years ago, I wouldn't have met my girlfriend, my little
-            brother, and have the platform I have today.<br>Sometimes the hardest bosses show up early in the game, but
-            trust me—the story gets better. You just have to keep playing. 🧡
+    <div class="kLove" style="color: #ffffff;">
+        <h1 style="background-color: #3b4975;">Kirka Loves <img src="icon.png"> You</h1>
 
-            <br>Love, <br> daymian
-        </p>
+        <img src="fabinLove.jpg">
+        <img src="love.png">
+        <img src="loveKirka.png">
+        <img src="nice.jpg">
     </div>
-    <footer>
+    <footer style="background: linear-gradient(90deg, #26335b, #3b4975); color: #ffffff;">
         <p>If you know someone who is struggling, please, do reach out for their help.</p>
     </footer>
     <script>
@@ -111,6 +113,7 @@
             }
         }
     </script>
+    <script src="script.js"></script>
 </body>
 
 </html>
