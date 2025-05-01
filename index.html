@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>love</title>
+</head>
+
+<body>
+    <header>
+        <h1>You Are Not Alone</h1>
+        <p>There is hope. There is help.</p>
+    </header>
+    <main>
+        <p class="textOne">If you are feeling overwhelmed, please know that support is available. You are valued, and
+            your life matters.</p>
+        <p class="textOne"><strong>Immediate Help:</strong></p>
+        <div class="overall">
+            <div class="halfOne">
+                <ul>
+                    <li>Call the Suicide Prevention Hotline: <a href="tel:988" style="text-decoration: underline;">988</a></li>
+                    <li>Text "HELLO" to 741741</li>
+                    <li>Reach out to a trusted friend or family member</li>
+                </ul>
+            </div>
+            <div class="halfTwo">
+                <label for="searchHotlines">Search for a country:</label>
+                <input type="text" id="searchHotlines" placeholder="Type a country name..." onkeyup="filterHotlines()">
+
+                <label for="hotlines">Select your country for a suicide prevention hotline:</label>
+                <select id="hotlines" name="hotlines" size="10">
+                    <option value="china">China: 0800-810-1117</option>
+                    <option value="india">India: 022-27546669</option>
+                    <option value="usa">USA: 1-800-273-8255</option>
+                    <option value="indonesia">Indonesia: +62 21 500 454</option>
+                    <option value="pakistan">Pakistan: 042-35761999</option>
+                    <option value="brazil">Brazil: 188</option>
+                    <option value="nigeria">Nigeria: +234 806 210 6493</option>
+                    <option value="bangladesh">Bangladesh: 199</option>
+                    <option value="russia">Russia: 8-800-2000-122</option>
+                    <option value="mexico">Mexico: 800 822 3737</option>
+                    <option value="uk">United Kingdom: 116 123 (Samaritans)</option>
+                    <option value="canada">Canada: 1-833-456-4566</option>
+                    <option value="australia">Australia: 13 11 14 (Lifeline)</option>
+                    <option value="japan">Japan: 0570-783-556</option>
+                    <option value="germany">Germany: 0800 111 0 111</option>
+                    <option value="france">France: 3114</option>
+                    <option value="italy">Italy: 800 86 00 22</option>
+                    <option value="southafrica">South Africa: 0800 567 567</option>
+                    <option value="philippines">Philippines: 0966-351-4518</option>
+                    <option value="southkorea">South Korea: 1393</option>
+                    <option value="argentina">Argentina: 135</option>
+                    <option value="spain">Spain: 024</option>
+                    <option value="newzealand">New Zealand: 0800 543 354</option>
+                    <option value="sweden">Sweden: 90101</option>
+                    <option value="norway">Norway: 116 123</option>
+                    <option value="denmark">Denmark: 70 201 201</option>
+                    <option value="finland">Finland: 09 2525 0111</option>
+                    <option value="netherlands">Netherlands: 113</option>
+                    <option value="belgium">Belgium: 1813</option>
+                    <option value="switzerland">Switzerland: 143</option>
+                    <option value="austria">Austria: 142</option>
+                    <option value="portugal">Portugal: 800 202 669</option>
+                    <option value="ireland">Ireland: 116 123</option>
+                    <option value="poland">Poland: 116 123</option>
+                    <option value="czechrepublic">Czech Republic: 116 123</option>
+                    <option value="hungary">Hungary: 116 123</option>
+                    <option value="romania">Romania: 0800 801 200</option>
+                    <option value="greece">Greece: 1018</option>
+                    <option value="turkey">Turkey: 182</option>
+                    <option value="malaysia">Malaysia: 03-76272929</option>
+                    <option value="singapore">Singapore: 1800 221 4444</option>
+                    <option value="thailand">Thailand: 1323</option>
+                    <option value="vietnam">Vietnam: 1900 9237</option>
+                    <option value="saudiarabia">Saudi Arabia: 920033360</option>
+                    <option value="uae">UAE: 800 4673</option>
+                    <option value="egypt">Egypt: 0800 888 0700</option>
+                    <option value="kenya">Kenya: 0800 720 029</option>
+                    <option value="ghana">Ghana: 2332 444 71279</option>
+                </select>
+            </div>
+        </div>
+        <p><strong>If your country is not listed, please search online for your local suicide prevention hotline.</strong></p>
+    </main>
+    <div class="myStory">
+        <h1>My Story</h1>
+        <p>At a young age, I lost my little sister when she was just only less than a year old. This really did
+            shape my perspective of reality and did hurt me, bring me down to depression. It hurt me so much I was
+            genuinely considering suicide, luckily I was stopped in time and I didn't. If you are considering
+            leaving the lobby early, DON'T. If I did that 7 years ago, I wouldn't have met my girlfriend, my little
+            brother, and have the platform I have today.<br>Sometimes the hardest bosses show up early in the game, but
+            trust me—the story gets better. You just have to keep playing. 🧡
+
+            <br>Love, <br> daymian
+        </p>
+    </div>
+    <footer>
+        <p>If you know someone who is struggling, please, do reach out for their help.</p>
+    </footer>
+    <script>
+        function filterHotlines() {
+            const searchInput = document.getElementById('searchHotlines').value.toLowerCase();
+            const hotlineOptions = document.getElementById('hotlines').options;
+
+            for (let i = 0; i < hotlineOptions.length; i++) {
+                const optionText = hotlineOptions[i].text.toLowerCase();
+                hotlineOptions[i].style.display = optionText.includes(searchInput) ? '' : 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>
